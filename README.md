@@ -46,3 +46,46 @@ The Entity-Relationship (ER) Diagram illustrates the structure of our database. 
 ## API Root Endpoint
 `http://localhost:8080`
 
+## API Entity Endpoints
+Please reference the [Endpoint Documentation](../../wikis/Endpoints-Documentation) page to read in detail about all the endpoints of the project.
+### Album Entity
+- `GET /albums` : Gets all the albums
+- `GET /albums/{id}` : Gets a specific album
+- `POST /artists/{artistId}/albums` : Creates an album
+- `PUT /artists/{artistId}/albums/{albumId}` : Updates an album
+- `DELETE /artists/{artistId}/albums/{albumId}` : Deletes an album
+### Song Entity
+- `GET /songs` : Gets all the songs
+- `GET /songs/{id}` : Gets a specific song
+- `POST /artists/create-song` : Creates a song
+- `PUT /artists/songs/{songId}` : Updates a song
+- `DELETE /artists/songs/{songId}` : Deletes a song
+### Playlist Entity
+- `GET /playlists` : Gets all playlists
+- `GET /playlists/{id}` : Gets a specific playlist
+- `POST /playlists` : Creates a playlist
+- `PUT /playlists/{id}` : Updates a playlist
+- `DELETE /playlists/{id}` : Deletes a playlist
+- `POST /playlists/{playlistId}/add-song/{songId}` : Adds a song to a playlist
+- `DELETE /playlists/{playlistId}/remove-song/{songId}` : Removes a song from a playlist
+### User Entity
+- `GET /users` : Gets all users
+- `GET /users/{id}` : Gets a specific user
+- `POST /users` : Creates a user
+- `PUT /users/{id}` : Updates a user
+- `DELETE /users/{id}` : Deletes a user
+- `POST /users/{userId}/play-song/{songId}` : Plays a song
+- `GET /users/{userId}/recommendations` : Gets the recommended songs
+### Artist Entity
+- `GET /artists` : Gets all artists
+- `GET /artists/{id}` : Gets a specific artist
+- `POST /artists` : Creates an artist
+- `PUT /artists/{id}` : Updates an artist
+- `DELETE /artists/{id}` : Deletes an artist
+### Genre Entity
+- `GET /genres` : Gets all genres
+- `GET /genres/{id}` : Gets a specific genre
+- `POST /genres` : Creates a genre
+- `PUT /genres/{id}` : Updates a genre
+- `DELETE /genres/{id}` : Deletes a genre
+
