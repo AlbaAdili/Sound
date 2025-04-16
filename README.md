@@ -37,3 +37,12 @@ spring.jpa.hibernate.ddl-auto=update
 
 spring.jpa.show-sql=true
 ```
+
+## Diagram
+The Entity-Relationship (ER) Diagram illustrates the structure of our database. This visual representation showcases the relationships between entities in our system. Use the diagram as a reference to understand the data model and the connections between key components in our application.
+### E-R Diagram
+![ER Diagram](Diagram/E-R-Diagram.jpeg)
+
+## API Root Endpoint
+`http://localhost:8080`
+
